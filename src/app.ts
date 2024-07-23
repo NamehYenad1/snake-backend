@@ -9,4 +9,5 @@ app.use(cors())
 app.use(bodyParser.json());
 app.use('/api/game', gameRoutes);
 
+
 export default app;

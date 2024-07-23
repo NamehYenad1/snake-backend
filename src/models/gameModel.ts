@@ -1,16 +1,16 @@
-interface Fruit {
+export interface Fruit {
     x: number;
     y: number;
 }
 
-interface Snake {
+export interface Snake {
     x: number;
     y: number;
     velX: number;
     velY: number;
 }
 
-interface State {
+export interface State {
     gameId: string;
     width: number;
     height: number;
@@ -19,4 +19,7 @@ interface State {
     snake: Snake;
 }
 
-export { State, Fruit, Snake };
+export interface Tick {
+    velX: number;
+    velY: number;
+}

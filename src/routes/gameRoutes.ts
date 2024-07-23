@@ -1,9 +1,10 @@
 import { Router } from 'express';
-import {newGame} from '../controllers/gameController';
+import {newGame, validateGame} from '../controllers/gameController';
 
 const router = Router();
 
 router.get('/new', newGame);
+router.post('/validate', validateGame);
 
 // Catch all other methods for the defined routes and return 405
 router.all('/new', (req, res) => res.status(405).send('Invalid method'));

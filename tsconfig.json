@@ -1,18 +1,15 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "_version": "16.1.0",
+
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "rootDir": ".",  // Set rootDir to the common parent directory
-    "outDir": "./dist",
+    "lib": ["es2021"],
+    "module": "node16",
+    "target": "es2021",
+
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
-  },
-  "include": [
-    "src/**/*.ts",
-    "tests/**/*.ts"  // Include tests files
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "skipLibCheck": true,
+    "moduleResolution": "node16"
+  }
 }

@@ -129,6 +129,140 @@ npm test
 
 - This will run the tests using Jest.
 
+PostMan Tests 
+```
+1.http://localhost:3000/api/game/new?w=10&h=10
+2.http://localhost:3000/api/game/validate
+JSON for POST
+180 degree turn{
+  "gameId": "test",
+  "width": 10,
+  "height": 10,
+  "score": 0,
+  "fruit": { 
+    "x": 5, 
+    "y": 0 
+  },
+  "snake": { 
+    "x": 0, 
+    "y": 0, 
+    "velX": 1, 
+    "velY": 0 
+  },
+  "ticks": [
+    { 
+      "velX": 1, 
+      "velY": 0 
+    }, 
+    { 
+      "velX": 1, 
+      "velY": 0 
+    },
+    { 
+      "velX": -1, 
+      "velY": 0 
+    }
+  ]
+}
+
+hit the edge
+{
+  "gameId": "test",
+  "width": 10,
+  "height": 10,
+  "score": 0,
+  "fruit": { 
+    "x": 9, 
+    "y": 1 
+  },
+  "snake": { 
+    "x": 0, 
+    "y": 0, 
+    "velX": 1, 
+    "velY": 0 
+  },
+  "ticks": [
+    { 
+      "velX": 1, 
+      "velY": 0 
+    }, 
+    { 
+      "velX": 1, 
+      "velY": 0 
+    },
+    { 
+      "velX": 1, 
+      "velY": 0 
+    },
+    { 
+      "velX": 1, 
+      "velY": 0 
+    },
+    { 
+      "velX": 1, 
+      "velY": 0 
+    },
+    { 
+      "velX": 1, 
+      "velY": 0 
+    },
+    { 
+      "velX": 1, 
+      "velY": 0 
+    },
+    { 
+      "velX": 1, 
+      "velY": 0 
+    },
+    { 
+      "velX": 0, 
+      "velY": 1 
+    },
+    { 
+      "velX": 1, 
+      "velY": 0 
+    },
+    { 
+      "velX": -1, 
+      "velY": 0 
+    },
+    { 
+      "velX": 0, 
+      "velY": 1 
+    }
+  ]
+}
+
+
+direct to fruit
+{
+  "gameId": "test",
+  "width": 10,
+  "height": 10,
+  "score": 0,
+  "fruit": { 
+    "x": 2, 
+    "y": 0 
+  },
+  "snake": { 
+    "x": 0, 
+    "y": 0, 
+    "velX": 1, 
+    "velY": 0 
+  },
+  "ticks": [
+    { 
+      "velX": 1, 
+      "velY": 0 
+    }, 
+    { 
+      "velX": 1, 
+      "velY": 0 
+    }
+  ]
+}
+```
+
 ## Deployment
 
 This project is deployed using Vercel. The deployment is automated using GitHub Actions.

@@ -2,8 +2,8 @@ import { Request, Response } from 'express';
 
 import { generateRandomPosition } from '../services/gameService';
 import { State, Fruit, Snake, Tick } from '../models/gameModel';
-//issue with nanoId V5 and Jest, Jest messes up ESM, due to lack of time will stick to jest instead of converting to another tesitng library
-const{ nanoid } = require('nanoid')
+import {nanoid} from 'nanoid'
+
 interface NewGameQuery {
     w?: string;
     h?: string;

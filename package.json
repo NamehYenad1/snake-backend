@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scripts": {
       "start": "ts-node src/server.ts",
       "build": "tsc",
       "test": "jest"
-    }
   },
   "repository": {
     "type": "git",

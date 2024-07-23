@@ -10,7 +10,7 @@
   },
   "include": [
     "src/**/*.ts",
-    "tests/**/*.ts"  // Include test files
+    "tests/**/*.ts"  // Include tests files
   ],
   "exclude": [
     "node_modules"

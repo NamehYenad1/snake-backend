@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
+    "target": "esnext",
+    "module": "esnext",
     "rootDir": ".",  // Set rootDir to the common parent directory
     "outDir": "./dist",
     "strict": true,

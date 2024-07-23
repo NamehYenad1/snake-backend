@@ -3,6 +3,8 @@ import {newGame, validateGame} from '../controllers/gameController';
 
 const router = Router();
 
+router.get('/', (req,res)=>{res.send('Snake Backend Api')})
+
 router.get('/new', newGame);
 router.post('/validate', validateGame);
 

@@ -9,5 +9,12 @@ app.use(cors())
 app.use(bodyParser.json());
 app.use('/api/game', gameRoutes);
 
+// Default route handler for the root URL
+app.get('/', (req, res) => {
+    res.send('Snake Backend API');
+});
+
+
+
 
 export default app;

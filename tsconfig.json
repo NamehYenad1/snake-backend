@@ -2,10 +2,17 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "commonjs",
-    "rootDir": "./src",
+    "rootDir": ".",  // Set rootDir to the common parent directory
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
-  }
+  },
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts"  // Include test files
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
